@@ -1,0 +1,23 @@
+name: Challenge
+type: theme
+description: custom theme for Challenge
+core: 8.x
+base theme: classy
+screenshot: screenshot.png
+
+libraries:
+  - challenge/challenge.css
+  - challenge/quicksand
+  - core/normalize
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: Left Sidebar
+  sidebar_second: Right Sidebar
+  front: Front Page Blocks
+  footer: Footer
+  page_top: Page Top
+  page_bottom: Page Bottom

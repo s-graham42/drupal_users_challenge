@@ -6,6 +6,7 @@ screenshot: secondtheme.png
 
 regions:
   header: Header
+  secondthememenu: Navigation
   content: Content
   sidebar_first: Sidebar First
   footer: Footer
@@ -14,3 +15,4 @@ regions:
 
 libraries:
   - secondtheme/global-css
+  - secondtheme/robotoslab

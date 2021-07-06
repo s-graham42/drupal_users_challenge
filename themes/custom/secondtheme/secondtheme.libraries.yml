@@ -4,4 +4,14 @@ global-css:  # container
     theme:
       css/elements.css: {} # globally applied
       css/layout.css: {} # globally applied
+      css/navigation.css: {}
       css/print.css: { media: print } # for print media, use this file
+
+robotoslab:
+  license:
+    name: Apache License, Version 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Roboto+Slab: { type: external }
+      css/styles.css: {}
