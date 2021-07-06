@@ -1,0 +1,5 @@
+name: My First Theme
+type: theme
+description: This is my first theme project
+core: 8.x
+screenshot: mytheme.png
