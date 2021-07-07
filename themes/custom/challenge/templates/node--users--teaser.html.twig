@@ -82,7 +82,7 @@
   <header>
     {{ title_prefix }}
       {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title') }}>
+      <h2{{ title_attributes.addClass('node__title') }}><small>Username:  </small>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
     {% endif %}
@@ -97,9 +97,9 @@
       </div>
     {% endif %}
   </header>
+  <h2 class="field-user-fullname">fullname</h2>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
   </div>
-  <h1>{{ first_name }}</h1>
 </article>
 
