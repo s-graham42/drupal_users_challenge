@@ -1,0 +1,18 @@
+name: Challenge
+type: theme
+description: built off of the Bartik theme for SSAI Challenge
+core: 8.x
+screenshot: challenge.png
+base theme: bartik
+
+libraries:
+  - challenge/challenge-css
+
+meriweathersans:
+  license:
+    name: SIL Open Font License 1.1
+    url: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Merriweather&display=swap: { type: external }
+      css/styles.css: {}

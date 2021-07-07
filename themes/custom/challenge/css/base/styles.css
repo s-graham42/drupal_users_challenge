@@ -1,0 +1,41 @@
+body {
+    font-family: 'Merriweather', serif !important;
+}
+
+#header {
+    background-color: #1d84c3 !important;
+    background-image: -webkit-linear-gradient(top,#084a73 0%,#04151f 100%) !important;
+    background-image: linear-gradient(to bottom,#084a73 0%,#04151f 100%) !important;
+}
+
+.site-branding__logo img {
+    border-radius: 40%;
+    border: 1px solid black;
+    box-shadow: 4px 4px 8px black;
+}
+#content {
+    max-width: 80%;
+    margin: 0 10%;
+    background-color: #d9e5f1;
+    background-image: linear-gradient(to right,#a3cce6 0%, #d9e5f1 20%, #d9e5f1 80%, #a3cce6 100%) !important;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px grey;
+}
+.page-title {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 11px;
+    border-radius: 11px;
+    box-shadow: 2px 2px 4px #a9acaf;
+    background-color: #c4d8ea;
+}
+.node--view-mode-teaser {
+    padding: 0 22% 15px !important;
+}
+#main-navi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
