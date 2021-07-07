@@ -10,11 +10,11 @@ body {
 	font-size: .875em;
   line-height: 1.6em;
   border-top: 7px solid #90A860;
-  background: #eaeaea url(../../images/body_bg.png);
-  color: #666;
+  background: #bdb9c0;
+  color: rgb(26, 25, 25);
 }
 a{
-color: #90A860;
+color: #eaebff;
 text-decoration: none;
 }
 

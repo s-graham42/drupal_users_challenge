@@ -1,0 +1,39 @@
+.region-header {
+    background-color:lightslategray;
+    width: 100%;
+    min-height: 100px;
+}
+#block-challenge-account-menu {
+    width: 200px;
+    background-color: aqua;
+    display: inline-block;
+}
+#block-challenge-main-menu ul {
+    background-color: #7fafff;
+    height: 40px;
+    padding-left: 0;
+    text-decoration: none;
+}
+#block-challenge-main-menu li {
+    display: inline;
+    list-style: none outside none;
+    list-style-type: none;
+    padding: 0 0.5em;
+}
+#block-challenge-main-menu li a {
+    background-color: #7fafff;
+    border-right: 1px solid #ffffff;
+    color: #ffffff;
+    display: block;
+    float: left;
+    padding: 5px 0;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+}
+#block-challenge-main-menu li a:hover, #block-challenge-main-menu li.active-trail a, #block-challenge-main-menu li a.active {
+    background-color: #4e8fac;
+    color: #ffffff;
+    font-size: bigger;
+    text-decoration: none;
+}
