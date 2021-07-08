@@ -11,6 +11,8 @@ global-scripts:
   dependencies:
     - core/jquery
     - core/drupalSettings
+    - core/jquery_ui
+    - jquery_ui_tooltip/tooltip
 
 meriweathersans:
   license:
