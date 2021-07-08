@@ -185,19 +185,21 @@ body {
     visibility: hidden;
     width: 160px;
     background-color: #5499c5;
+    box-shadow: 1px 1px 5px grey;
     color: #fff;
     text-align: center;
     padding: 2px 4px;
     border-radius: 6px;
+    text-shadow: 0px 0px 5px black;
 
-    /* Position the text */
+    /* Position */
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
     margin-left: -60px;
 
-    /* Fade in tooltip */
+    /* Fade in */
     opacity: 0;
     transition: opacity 0.3s;
 }
