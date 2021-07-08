@@ -17,22 +17,30 @@ $( function() {
 } );
 
 $(function() {
-    console.log( "article function ready!" );
-    findArticles();
+    // console.log( "article function ready!" );
+    delayArticles();
 });
 
-function findArticles() {
-    console.log('findArticles');
+function delayArticles() {
+    /*  function to delay all the teaser blocks as they float up.
+
+        finds all the teaser blocks.
+        iterates through the blocks:
+            adds an animation-delay css property to the block,
+            beginning with a 0 second delay, and increasing by
+            1/2 second each time.
+    */
+    // console.log('findArticles');
     var $articles = $('article.node--view-mode-teaser');
-    console.log('number of articles: ' + $articles.length);
+    // console.log('number of articles: ' + $articles.length);
 
     var delay = 0.0;
 
     for (let i = 0; i < $articles.length; i++) {
-        console.log($articles.eq(i));
+        // console.log($articles.eq(i));
         $articles.eq(i).css('animation-delay', (delay + 's'));
         delay += 0.5;
-        console.log($articles.eq(i).css('animation-delay'));
+        // console.log($articles.eq(i).css('animation-delay'));
     }
 }
 
