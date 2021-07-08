@@ -23,19 +23,16 @@ $(function() {
 
 function findArticles() {
     console.log('findArticles');
-    var $articles = $('article');
+    var $articles = $('article.node--view-mode-teaser');
     console.log('number of articles: ' + $articles.length);
 
-    for (const article in $articles) {
-    console.log(article);
-    // /console.log($articles.eq(x).children('.field-user-fullname').text());
-    // console.log($articles.eq(x).children('.field--name-field-first-name').length);/
-    // //console.log($('article').eq(x).children('.nodecontent').children('.field--name-field-first-name').children('.fielditem').text());
-    // //console.log($('article').eq(x).children('.nodecontent').children('.field--name-field-last-name').children('.fielditem').text());
-    // var first = $('article').eq(x).children('.nodecontent').children('.field--name-field-first-name').children('.fielditem').text();
-    // var last = $('article').eq(x).children('.nodecontent').children('.field--name-field-last-name').children('.fielditem').text();
-    // console.log(first+" "+last);
-    // $articles.eq(x).children('.field-user-fullname').html(first+" "+last);
+    var delay = 0.0;
+
+    for (let i = 0; i < $articles.length; i++) {
+        console.log($articles.eq(i));
+        $articles.eq(i).css('animation-delay', (delay + 's'));
+        delay += 0.5;
+        console.log($articles.eq(i).css('animation-delay'));
     }
 }
 
