@@ -84,7 +84,7 @@
     {{ title_prefix }}
       {% if label and not page %}
       <h2{{ title_attributes.addClass('node__title') }}><small>Username:  </small>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        <a class='move-down-tooltip' title="Go to full user page" href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
     {% endif %}
     {{ title_suffix }}
@@ -98,7 +98,7 @@
       </div>
     {% endif %}
   </header>
-  <h2 class="field-user-fullname"><small>Full Name:  </small>{{ node.field_first_name.value }} {{ node.field_last_name.value }}</h2>
+  <h2 class="field-user-fullname" onclick="randConfetti()"><small>Full Name:  </small>{{ node.field_first_name.value }} {{ node.field_last_name.value }}</h2>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
   </div>

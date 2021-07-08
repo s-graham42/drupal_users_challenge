@@ -33,3 +33,13 @@ creteround:
       //fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap: { type: external }
       css/styles.css: {}
   # font-family: 'Crete Round', serif;
+
+confetti:
+  remote: https://github.com/catdad/canvas-confetti
+  version: "1.4.0"
+  license:
+    name: ISC
+    url: https://github.com/catdad/canvas-confetti/blob/master/LICENSE
+  js:
+    //cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js: { type: external }
+    js/scripts.js: {}
