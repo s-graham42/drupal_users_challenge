@@ -54,6 +54,7 @@ a {
 /* USER CARD */
 .node--view-mode-teaser, .node--view-mode-teaser, .node--sticky {
     padding: 15px !important;
+    position: relative;
     margin: 0 auto;
     width: 64%;
     /* background-color: #e4f3fd; */
@@ -196,7 +197,7 @@ a {
     .node .field--type-image {
         display: none;
     }
-    .image-style-large, {
+    .image-style-large {
         display: none;
     }
     .views-field-title .field-content a {
