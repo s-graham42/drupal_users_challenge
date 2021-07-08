@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: 'Crete Round', serif !important;
 }
 
 #header {
@@ -23,22 +23,158 @@ body {
 }
 .page-title {
     text-align: center;
+    text-shadow: 0px 0px 5px white;
     width: 50%;
     margin: 0 auto;
     padding: 11px;
     border-radius: 11px;
     box-shadow: 2px 2px 4px #a9acaf;
-    background-color: #c4d8ea;
+    background-color: #91bee6;
 }
-.node--view-mode-teaser {
-    padding: 0 22% 15px !important;
+
+/* USER CARD */
+.node--view-mode-teaser, .node--view-mode-teaser, .node--sticky {
+    padding: 15px !important;
+    margin: 0 auto;
+    width: 64%;
+    /* background-color: #e4f3fd; */
+    background-image: url("../paperstock4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px outset #b8e0f5;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px grey;
 }
+.node--view-mode-teaser h2.node__title {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 0px 1px 6px #ccecff;
+    padding: 5px 2% 10px;
+}
+.field__label {
+    padding-left: 6%;
+}
+.field__item {
+    font-weight: 500;
+}
+.field__label, .field__item {
+    font-size: medium;
+    text-shadow: 0px 1px 6px #ccecff;
+}
+.field-user-fullname {
+    font-size: 1.6em !important;
+    color: black;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 0px 1px 6px #eff9ff;
+}
+
+/* ARTICLE */
+.field--name-field-tags {
+    margin: 10px 0 0 !important;
+}
+.node .field--type-image {
+    float: right !important;
+    margin: 0 2em 0 !important;
+}
+.node .field--type-image img {
+    box-shadow: 2px 2px 4px grey;
+    margin: 0 !important;
+}
+.node--type-article {
+    padding: 0 4% 0;
+}
+
+#block-challenge-content {
+    padding: 0 4%;
+}
+/* PHOTO GALLERY */
+.views-field-title .field-content a {
+    border-bottom: none;
+    color: black;
+    font-size: 1.5em;
+    margin: 0 15px;
+    font-style: italic;
+}
+.views-field-field-photo .field-content a {
+    border-bottom: none;
+}
+.image-style-photo-gallery-of-users {
+    box-shadow: 2px 2px 6px grey;
+    margin: 10px 0 20px;
+}
+
+
+/* MEDIA QUERIES */
+@media all and (min-width: 726px) and (max-width: 900px) {
+    #content {
+        max-width: 84%;
+        margin: 0 8%;
+    }
+    .node--view-mode-teaser, .node--view-mode-teaser, .node--sticky {
+        width: 80%;
+    }
+    .site-branding__name {
+        padding-top: 1em;
+    }
+    .image-style-large {
+        width: 65%;
+    }
+    .views-field-title .field-content a {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (max-width: 725px) {
+    #content {
+        max-width: 98%;
+        margin: 0 1%;
+    }
+    .node--view-mode-teaser, .node--view-mode-teaser, .node--sticky {
+        width: 90%;
+    }
+    .site-branding__name {
+        padding-top: 1em;
+    }
+    .image-style-large {
+        width: 50%;
+    }
+    .views-field-title .field-content a {
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width: 461px) {
+    .site-branding__slogan {
+        display: none;
+    }
+    .node .field--type-image {
+        display: none;
+    }
+    .image-style-large {
+        display: none;
+    }
+    .views-field-title .field-content a {
+        font-size: 0.6em;
+        margin: 0;
+    }
+}
+
+/* MAIN NAVBAR */
 #main-navi {
+    margin: 0 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.menu-toggle {
+    font-weight: 700;
+    color: black !important;
+    text-shadow: 0px 1px 5px #f1f1f1 !important;
+}
+
 /* Tooltip container */
 .tooltip {
     position: relative;
@@ -83,12 +219,13 @@ body {
     border-color: #5499c5 transparent transparent transparent;
 }
 
-  /* Show the tooltip text when you mouse over the tooltip container */
+  /* Show tooltip on hover */
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 0.9;
 }
 
+/* Small Buttons */
 .node-readmore {
     background-color: #63a3cc;
     margin: 2px 5px;
@@ -111,8 +248,17 @@ body {
     color: white;
     border: none;
 }
-
-.field__label, .field__item {
-    font-size: medium;
-    font-weight: 600;
+.field__items li {
+    background-color: #0099ad;
+    margin: 2px 5px;
+    padding: 4px 10px !important;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px grey;
+}
+.field__items li a {
+    color: white;
+    border: none;
+}
+a.username {
+    border-bottom: none;
 }

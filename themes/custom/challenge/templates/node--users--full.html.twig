@@ -77,13 +77,12 @@
     'clearfix',
   ]
 %}
-
 {{ attach_library('bartik/classy.node') }}
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
       {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title') }}><small>Username:  </small>
+      <h2{{ title_attributes.addClass('node__title') }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
     {% endif %}
@@ -98,13 +97,8 @@
       </div>
     {% endif %}
   </header>
-  <h2 class="field-user-fullname"><small>Full Name:  </small>{{ node.field_first_name.value }} {{ node.field_last_name.value }}</h2>
+  <h2 class="field-user-fullname">Full Name:  {{ node.field_first_name.value }} {{ node.field_last_name.value }}</h2>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
   </div>
-  
-  <script>
-    console.log("twig is ready");
-  </script>
 </article>
-

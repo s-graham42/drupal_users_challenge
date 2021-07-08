@@ -3,3 +3,31 @@ challenge-css:
   css:
     base: 
       css/base/styles.css: {}
+
+global-scripts:
+  version: 1.0
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+
+meriweathersans:
+  license:
+    name: SIL Open Font License 1.1
+    url: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Merriweather&display=swap: { type: external }
+      css/styles.css: {}
+  # font-family: 'Merriweather', serif;
+
+creteround:
+  license:
+    name: SIL Open Font License 1.1
+    url: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap: { type: external }
+      css/styles.css: {}
+  # font-family: 'Crete Round', serif;
