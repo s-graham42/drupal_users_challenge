@@ -57,7 +57,7 @@ a {
     margin: 0 auto;
     width: 64%;
     /* background-color: #e4f3fd; */
-    background-image: url("../paperstock4.jpg");
+    background-image: url("../paperstock6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px outset #b8e0f5;
@@ -93,6 +93,15 @@ a {
     font-weight: 800;
     font-style: italic;
     text-shadow: 0px 1px 6px #eff9ff;
+}
+.field--name-field-teams .field__label {
+    font-size: 1em !important;
+    font-weight: 700 !important;
+}
+.field--name-field-teams a {
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 0 10px;
 }
 
 /* ARTICLE */
@@ -177,6 +186,12 @@ a {
 @media all and (max-width: 461px) {
     .site-branding__slogan {
         display: none;
+    }
+    .site-branding__name {
+        padding-top: 0.5em;
+    }
+    .site-branding__logo {
+        width: 65px;
     }
     .node .field--type-image {
         display: none;
